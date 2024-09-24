@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-er75bsyfs$ppf)j$71ct4(h(07phltx-6nb3vr*1(k840sm=ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
+    "*",
 ]
 
 ROOT_URLCONF = 'tourandtravel.urls'
@@ -122,7 +122,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
@@ -142,3 +141,6 @@ import os
 DATABASES = {
     "default": dj_database_url.parse("postgres://stivo_user:xvxSXcHFzinX9jckHHFGhMZcnSxoPKbC@dpg-crnfcdo8fa8c738f976g-a.oregon-postgres.render.com/stivo")
 }
+
+STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
