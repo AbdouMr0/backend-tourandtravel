@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-er75bsyfs$ppf)j$71ct4(h(07phltx-6nb3vr*1(k840sm=ef
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -53,7 +53,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware'
 ]
 CORS_ALLOWED_ORIGINS = [
-    "*",
+    "https://pn4g26ts-3000.uks1.devtunnels.ms",
 ]
 
 ROOT_URLCONF = 'tourandtravel.urls'
