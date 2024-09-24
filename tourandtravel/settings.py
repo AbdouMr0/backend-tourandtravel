@@ -54,7 +54,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "https://pn4g26ts-3000.uks1.devtunnels.ms",
-    "https://tourandtravel1.netlify.app"
+    "https://tourandtravel0.netlify.app"
 ]
 
 ROOT_URLCONF = 'tourandtravel.urls'
