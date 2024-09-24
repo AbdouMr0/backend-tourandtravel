@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-er75bsyfs$ppf)j$71ct4(h(07phltx-6nb3vr*1(k840sm=ef'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -54,6 +54,7 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "https://pn4g26ts-3000.uks1.devtunnels.ms",
+    "https://tourandtravel1.netlify.app"
 ]
 
 ROOT_URLCONF = 'tourandtravel.urls'
